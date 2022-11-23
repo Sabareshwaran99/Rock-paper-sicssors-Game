@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,500;0,600;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+,::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+}
+
+html{
+    font-size: 16px;
+}
+
+:root{
+    --clr-seaweed:#177e89;
+    --clr-green:#084c61;
+    --clr-yellow:#ffc857;
+    --clr-red:#db3a34;
+    --clr-jet:#323031;
+    --clr-white:#fffafa;
+    --clr-black:#383838;
+    --box-shadow:0px 22px 12px rgba(0,0,0,0.15);
+
+}
+/* global css */
+
+img{
+    width:100%;
+    height:auto
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+body{
+    /* background-color: #FBAB7E; */
+    /* background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images.png);
+}    
+.card{
+    width: 25rem;
+    min-height: 10em;
+    margin: 0 auto;
+    background-color: var(--clr-white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+
+.info-container, 
+.weapons-container{
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.weapons-container{
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.title-container{
+    display:flex ;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: 900;
+    gap: 0.25rem;
+
+}
+
+
+.score-container{
+    font-size: 2.15rem;
+    font-weight: 500;
+
+
+}
+
+.score-container span{
+    font-weight: 900;
+
+}
+
+.btn-weapon{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: var(--clr-yellow);
+    border: 2px solid var(--clr-yellow);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: var(--clr-seaweed);
+    box-shadow:  20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+    cursor: pointer;
+    transform: all 0.5s ease-out;
+}
+
+.btn-weapon:hover{
+    transform: scale(1.05) translateY(-5px);
+}
+
+.result-container{
+    min-height: 3rem;
+    text-align: center;
+    font-size: 2.05rem;
+    font-weight: 600;
+
+
+}
+.user-choice{
+    color: green;
+    text-align: uppercase;
+}
+.comp-choice{
+    color: red;
+}
+.result{
+
+    color: var(--clr-jet);
+}
+
+
+.result-container p{
+    margin-bottom: 0.5rem;
+}
+.user-score{
+    color: green;
+}
+.comp-score{
+    color: red;
+}

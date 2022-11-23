@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boiler-plate</title>
+
+  <!-- fontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+  <!--normalized css-->
+  <link rel="stylesheet" href="./normalize.css">
+
+  <!--custom css--> 
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+
+
+<div class="container card">
+
+  <div class="info-container">
+    <div class="title-container">
+      <span>Rock 🧱 </span>
+      <span>Paper 📃 </span>
+      <span>Scissors ✂ </span>
+    </div>
+
+    <div class="score-container">
+      <p>user score: <span class="user-score">0</span></p>
+      <p>comp score : <span class="comp-score">0</span></p>
+    </div>
+
+  </div>
+
+
+
+  <div class="weapons-container">
+  
+    <button class="btn btn-weapon" onclick="playGame(`rock`)"><i class="fa-solid fa-hand-back-fist"></i> </button>
+
+    <button class="btn btn-weapon" onclick= "playGame(`paper`)" ><i class="fa-solid fa-hand"></i> </button>
+
+    <button class="btn btn-weapon" onclick="playGame(`scissors`)"><i class="fa-solid fa-hand-scissors"></i> </button>
+      
+  </div>
+
+<div class="result-container">
+  <p class="user-choice"></p>
+  <p class="comp-choice"></p>
+  <p class="result"></p>
+</div>
+</div>
+
+<!--custom script-->
+<script src="./script.js"></script>
+</body>
+</html>
